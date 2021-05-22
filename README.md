@@ -21,7 +21,7 @@ This data set contains three files. The first file describes the characteristics
 
 ## Problem Statement / Metrics<a name="Problem Statement / Metrics"></a>
 
-he problem that I chose to solve is to build a model that predicts whether a customer will respond to an offer. My strategy for solving this problem has the following steps. 
+The problem that I chose to solve is to build a model that predicts whether a customer will respond to an offer. My strategy for solving this problem has the following steps. 
 1- clean and combine offer portfolio, customer profile, and transaction data. Each row of this combined dataset will describe an offer's attributes, customer demographic data, and whether the offer was successful. 
 2- apply a different machine learning model and assess additional accuracy and F1-score. The 'naive model' assumes all offers were successful. This provides me with a baseline for evaluating the performance of models that I construct. Accuracy measures how well a model correctly predicts whether an offer is successful. However, if the percentage of successful or unsuccessful offers is deficient, accuracy is not a good measure of model performance. For this situation, evaluating a model's precision and recall provides better insight into its account. Hence, I chose the F1-score metric because it is "a weighted average of the precision and recall metrics". 
 3-, compare the performance of logistic regression, random forest, and gradient boosting models. 
