@@ -4,7 +4,7 @@
 ### Table of Contents
 
 1. [Project Overview](#overview)
-2. [Problem Statement / Metrics](#Problem Statement / Metrics)
+2. [Problem Statement/Metrics](#Problem Statement)
 3. [Project Components](#components)
 4. [Installation](#installation)
 5. [Motivation](#Motivation)
