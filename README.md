@@ -95,25 +95,25 @@ Here is the schema and explanation of each variable in the files:
 Visualization and Linear regression are used in the analysis and get the conclusion:
 > Advertising can help increase revenues but not profits necessarily. Informational offer has more negligible effect than BOGO and discount. However, if Starbucks intend to attract more consumers, promotion costs might offset incomes while there is not enough customer response.
 > Due to the low response rate, it suggests that advertising higher income females who are three years member seem a good idea since they are most likely spending more in Starbucks.
-* Offer_id 'fafdcd668e3743c1bb461111dcafc2a4' is the most successful offer and corresponds to 'discount' offer with minimum spend of 10 dollars within 10 days of receiving of the offer and having reward of 2 dollars. Offer_id '3f207df678b143eea3cee63160fa8bed' is the least successful offer and corresponds to informational offer with no minimum spend required having no reward.
 
-* All our trained classifier produce better f1_score than the baseline model's f1_score of 0.6996. RandomForestClassifier and GradientBoostingClassifier got nearly equal f1_score(approx. 0.92) but RandomForestClassifier took very less time to train than the GradientBoostingClassifier. Therefore, best performing classifier algorithm among the above 4 classifiers was RandomForestClassifier.
 
 * The hyperparameters of the trained RandomForestClassifier was further fine tuned using GridSearchCV and our model got improved and produced a better f1_score of 0.9319 with cross-validation.
 
-* Our best estimator produced f1_score of 0.9336 on test data, which is quite good.
 
 * Top 10 features which influence whether the customer will respond to an offer or not after viewing the offer are: 'total_amount', 'membership_tenure' , 'social', 'difficulty', 'duration', 'reward', '2018', '2016', 'income_30ths' and 'age_50s'.
 
 
 *Starbucks, periodically send the offers to users that may be an advertisement, discount or buy one get one free offer this data set is a simulation of customer behavior on the Starbucks rewards mobile application. An important characteristic of this dataset is that not all users receive the same offer. Hence, identifying the right individuals for targeted marketing who will respond positively to an offer Machine Learning Model used as part of the project Logistic Regression Model random forest gradient boosting naive predictor This model will be compared to the highest training data accuracy and F1-score. Bias and variance are two characteristics of a machine learning model. Bias refers to inherent model assumptions regarding the decision boundary between different classes. On the other hand, variance refers to a model’s sensitivity to changes in its inputs. Both random forest and gradient boosting models are a combination of multiple decision trees. A random forest classifier randomly samples the training data with replacement to construct a set of decision trees that are combined using majority voting. In contrast, gradient boosting iteratively constructs a set of decision trees with the goal of reducing the number of misclassified training data samples from the previous iteration. A consequence of these model construction strategies is that the depth of decision trees generated during random forest model training is typically greater than gradient boosting weak learner depth to minimize model variance. Typically, gradient boosting performs better than a random forest classifier. However, gradient boosting may overfit the training data and requires additional effort to tune. A random forest classifier is less prone to overfitting because it constructs decision trees from random training data samples. Also, a random forest classifier’s hyperparameters are easier to optimize. Random Forest model was the best model on training dataset hence best fit parameters were refined further to test on 'test dataset', the performance of the model accuracy and F1-score improved as compared with training set and overfitting signs were observed.
 
-* [Project Notebook: Starbucks Capstone Challenge]()
+         Linear Regression	Random |Forest Regression |	Supported Vector Rregreesion
+R2_train	       0.21              |            	0.26 |            	-0.10
+R2_test	        0.23	             |             0.20	 |             -0.12
+* [Project Notebook: Starbucks Capstone Challenge](https://github.com/ayman-metwally2020/Starbucks_Project/)
 * [Blog Post: Who will engage in Starbucks Offers?](https://ayman-metwally.medium.com/starbucks-capstone-challenge-28922fa03cae)
 
 
 ### Acknowledgements
 
 This project was completed as part of the [Udacity Data Scince Nanodegree](https://classroom.udacity.com/nanodegrees/nd025/dashboard/overview. The dataset used in this project contains simulated data that mimics customer behavior on the Starbucks rewards mobile app. [Starbucks® Rewards program: Starbucks Coffee Company](https://www.starbucks.com/rewards/).
-Medium links:
+
 
